@@ -10,7 +10,7 @@ import TransferMoney from "../pages/TransferMoney/TransferMoney";
 import TransactionHistory from "../pages/TransactionHistory/TransactionHistory";
 import Loan from "../pages/Loan/Loan";
 import NotFound from "../pages/NotFound/NotFound";
-import ChangePassword from "../pages/ChangePassword/ChangePassword";
+import ChangePassword from "../pages/changePassword/changePassword";
 import AdminDashboard from "../pages/AdminDashboard/AdminDashboard";
 import AdminUsers from "../pages/AdminUsers/AdminUsers";
 import AdminLoans from "../pages/AdminLoans/AdminLoans";
