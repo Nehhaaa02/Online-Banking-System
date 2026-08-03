@@ -1,6 +1,6 @@
 import { useState } from "react";
 import API from "../../services/api";
-import "./ChangePassword.css";
+import "./changePassword.css";
 
 function ChangePassword() {
   const [formData, setFormData] = useState({
