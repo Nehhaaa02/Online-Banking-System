@@ -1,0 +1,139 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #f4f7fb;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 420px;
+  background: #1c1c1c;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.login-box h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-box input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+}
+
+.login-box button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #0d6efd;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #0b5ed7;
+}
+
+.login-box p {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.login-box a {
+  color: #4da3ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-box a:hover {
+  text-decoration: underline;
+}
+
+small {
+  display: block;
+  color: #ff4d4d;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.show-password {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.show-password input {
+  width: auto;
+  margin: 0;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 768px) {
+  .login-box {
+    max-width: 380px;
+    padding: 30px;
+  }
+
+  .login-box h2 {
+    font-size: 24px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 15px;
+  }
+
+  .login-box {
+    padding: 25px 20px;
+    border-radius: 12px;
+  }
+
+  .login-box h2 {
+    font-size: 22px;
+  }
+
+  .login-box input,
+  .login-box button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .login-box p {
+    font-size: 14px;
+  }
+
+  .show-password {
+    font-size: 13px;
+  }
+}

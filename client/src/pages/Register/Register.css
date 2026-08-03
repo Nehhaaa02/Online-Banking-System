@@ -1,0 +1,139 @@
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #f4f7fb;
+}
+
+.register-box {
+  width: 100%;
+  max-width: 450px;
+  background: #1c1c1c;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.register-box h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.register-box input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.register-box input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+}
+
+.register-box button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-box button:hover {
+  background: #0b5ed7;
+}
+
+.register-box p {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.register-box a {
+  color: #4da3ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-box a:hover {
+  text-decoration: underline;
+}
+
+small {
+  display: block;
+  color: #ff4d4d;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.show-password {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.show-password input {
+  width: auto;
+  margin: 0;
+}
+
+
+
+@media (max-width: 768px) {
+  .register-box {
+    max-width: 400px;
+    padding: 30px;
+  }
+
+  .register-box h2 {
+    font-size: 24px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .register-container {
+    padding: 15px;
+  }
+
+  .register-box {
+    padding: 25px 20px;
+    border-radius: 12px;
+  }
+
+  .register-box h2 {
+    font-size: 22px;
+  }
+
+  .register-box input,
+  .register-box button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .register-box p {
+    font-size: 14px;
+  }
+
+  .show-password {
+    font-size: 13px;
+  }
+}

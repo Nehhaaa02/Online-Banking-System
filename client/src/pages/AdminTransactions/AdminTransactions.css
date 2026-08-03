@@ -1,0 +1,73 @@
+.admin-transactions {
+  min-height: 100vh;
+  background: #f4f7fb;
+  padding: 30px 20px;
+}
+
+.admin-transactions h1 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.transaction-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.transaction-table th {
+  background: #0d6efd;
+  color: white;
+  padding: 15px;
+}
+
+.transaction-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-table tr:hover {
+  background: #f8f9fa;
+}
+
+
+
+@media (max-width:768px){
+
+.admin-transactions{
+    padding:20px 15px;
+}
+
+.admin-transactions h1{
+    font-size:28px;
+}
+
+}
+
+
+
+@media (max-width:480px){
+
+.admin-transactions{
+    padding:15px 10px;
+}
+
+.admin-transactions h1{
+    font-size:24px;
+}
+
+}

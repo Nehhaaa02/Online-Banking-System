@@ -1,0 +1,105 @@
+.loan-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.loan-box {
+  width: 100%;
+  max-width: 500px;
+  background: #1f2937;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.loan-box h1 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.loan-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.loan-box input,
+.loan-box select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.loan-box input:focus,
+.loan-box select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.4);
+}
+
+.loan-box button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #0d6efd;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.loan-box button:hover {
+  background: #0b5ed7;
+}
+
+
+
+@media (max-width: 768px) {
+  .loan-page {
+    padding: 30px 15px;
+  }
+
+  .loan-box {
+    max-width: 450px;
+    padding: 30px;
+  }
+
+  .loan-box h1 {
+    font-size: 26px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .loan-page {
+    padding: 20px 15px;
+  }
+
+  .loan-box {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .loan-box h1 {
+    font-size: 24px;
+  }
+
+  .loan-box input,
+  .loan-box select,
+  .loan-box button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

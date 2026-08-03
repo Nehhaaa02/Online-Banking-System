@@ -1,0 +1,83 @@
+.transaction-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  padding: 40px 20px;
+}
+
+.transaction-page h1 {
+  text-align: center;
+  color: #1e293b;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* Responsive Table */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.transaction-table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.transaction-table th {
+  background: #0d6efd;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.transaction-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.transaction-table tr:hover {
+  background: #f8f9fa;
+}
+
+.transaction-table tr:last-child td {
+  border-bottom: none;
+}
+
+
+@media (max-width:768px){
+
+.transaction-page{
+    padding:30px 15px;
+}
+
+.transaction-page h1{
+    font-size:28px;
+}
+
+}
+
+
+
+@media (max-width:480px){
+
+.transaction-page{
+    padding:20px 10px;
+}
+
+.transaction-page h1{
+    font-size:24px;
+}
+
+.transaction-table th,
+.transaction-table td{
+    padding:12px;
+    font-size:14px;
+}
+
+}

@@ -1,0 +1,22 @@
+.account {
+  min-height: 100vh;
+  background: #121212;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.account-card {
+  max-width: 500px;
+  margin: 30px auto;
+  background: #1f1f1f;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.account-card p {
+  margin: 15px 0;
+  font-size: 18px;
+}
