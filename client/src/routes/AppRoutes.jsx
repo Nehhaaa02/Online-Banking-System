@@ -79,7 +79,7 @@ function AppRoutes() {
   path="/change-password"
   element={
     <ProtectedRoute>
-      <changePassword />
+      <ChangePassword />
     </ProtectedRoute>
   }
 />
