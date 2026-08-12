@@ -7,7 +7,7 @@ function Account() {
 useEffect(() => {
   const fetchAccount = async () => {
     try {
-      const response = await API.get("/accounts");
+      const response = await API.get("/api/accounts");
       console.log(response.data);
       setAccount(response.data.account);
     } catch (error) {
