@@ -8,7 +8,7 @@ function TransactionHistory() {
   useEffect(() => {
     const fetchTransactions = async () => {
       try {
-        const response = await API.get("/transactions");
+        const response = await API.get("/api/transactions");
         console.log(response.data);  
         
         setTransactions(response.data.transactions);
