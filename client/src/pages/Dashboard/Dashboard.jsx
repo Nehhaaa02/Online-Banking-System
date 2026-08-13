@@ -9,7 +9,7 @@ function Dashboard() {
   useEffect(() => {
   const fetchAccount = async () => {
     try {
-      const response = await API.get("/accounts");
+      const response = await API.get("/api/accounts");
       setAccount(response.data.account);
     } catch (error) {
       console.log(error);
