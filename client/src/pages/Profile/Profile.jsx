@@ -38,7 +38,7 @@ function Profile() {
     e.preventDefault();
 
     try {
-      const response = await API.put("/users/profile", {
+      const response = await API.put("/api/users/profile", {
         fullName: formData.fullName,
         phone: formData.phone,
       });
