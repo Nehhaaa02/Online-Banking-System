@@ -20,7 +20,7 @@ function ChangePassword() {
     e.preventDefault();
 
     try {
-      const response = await API.put("/users/change-password", formData);
+      const response = await API.put("/api/users/change-password", formData);
       alert(response.data.message);
 
       setFormData({
