@@ -18,7 +18,7 @@ function TransferMoney() {
     e.preventDefault();
 
     try {
-      const response = await API.post("/transactions/transfer", {
+      const response = await API.post("/api/transactions/transfer", {
   receiver: formData.receiver,
   amount: Number(formData.amount),
 });

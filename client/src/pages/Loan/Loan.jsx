@@ -20,7 +20,7 @@ function Loan() {
     e.preventDefault();
 
     try {
-      const response = await API.post("/loans/apply", formData);
+      const response = await API.post("/api/loans/apply", formData);
 
       alert(response.data.message);
 
