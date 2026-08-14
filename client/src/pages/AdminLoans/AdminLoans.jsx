@@ -12,7 +12,7 @@ function AdminLoans() {
 
   const fetchLoans = async () => {
   try {
-    const response = await API.get("/admin/loans");
+    const response = await API.get("/api/admin/loans");
 
     console.log("Loans Response:", response.data);
 
@@ -24,7 +24,7 @@ function AdminLoans() {
 
   const updateStatus = async (id, status) => {
     try {
-      const response = await API.put(`/admin/loans/${id}`, {
+      const response = await API.put(`/api/admin/loans/${id}`, {
         status,
       });
 
