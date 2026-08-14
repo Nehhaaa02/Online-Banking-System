@@ -16,7 +16,7 @@ function AdminDashboard() {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const response = await API.get("/admin/dashboard");
+        const response = await API.get("/api/admin/dashboard");
         setStats(response.data.stats);
       } catch (error) {
         console.log(error);
