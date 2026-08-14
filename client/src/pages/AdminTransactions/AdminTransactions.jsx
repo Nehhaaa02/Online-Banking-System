@@ -11,7 +11,7 @@ function AdminTransactions() {
 
   const fetchTransactions = async () => {
     try {
-      const response = await API.get("/admin/transactions");
+      const response = await API.get("/api/admin/transactions");
       setTransactions(response.data.transactions);
     } catch (error) {
       console.log(error);
