@@ -10,7 +10,7 @@ const [roleFilter, setRoleFilter] = useState("all");
   if (!window.confirm("Are you sure you want to delete this user?")) return;
 
   try {
-    const response = await API.delete(`/admin/users/${id}`);
+    const response = await API.delete(`/api/admin/users/${id}`);
 
     alert(response.data.message);
 
@@ -21,7 +21,7 @@ const [roleFilter, setRoleFilter] = useState("all");
 };
 const handleRoleChange = async (id, role) => {
   try {
-    const response = await API.put(`/admin/users/${id}/role`, {
+    const response = await API.put(`/api/admin/users/${id}/role`, {
       role,
     });
 
@@ -40,7 +40,7 @@ const handleRoleChange = async (id, role) => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await API.get("/admin/users");
+        const response = await API.get("/api/admin/users");
         setUsers(response.data.users);
       } catch (error) {
         console.log(error);
